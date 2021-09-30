@@ -240,3 +240,8 @@ module.exports.getCompletedTodo = (req, res) => {
       });
     });
 }
+
+module.exports.like = (req, res) => {
+let todo =  Todo.findById({ _id: req.params.id }).then((data));
+//userId should be push in like array
+}
