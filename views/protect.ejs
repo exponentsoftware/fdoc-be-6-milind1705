@@ -1,0 +1,14 @@
+<title>ToDo</title>
+<h1>Welcome to TODO</h1>
+<div id="data">
+
+</div>
+
+<script>
+   let apiUrl = "http://localhost:3000/user/6151932bc0c6d96d0da74ca2"
+    fetch(apiUrl).then((responces => responces.json())).then((data => {
+        var dataArr = data.data
+        console.log(dataArr[0])
+        
+    }))
+</script>
